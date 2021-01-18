@@ -347,10 +347,12 @@ MonoBehaviour:
   _beam: {fileID: 3265598585358162399, guid: 59798999466a4ef4ebb6c69e5c9137c1, type: 3}
   _spawnPlatform: {fileID: 6944649579834411023, guid: 5b1d12afc4b331d4e96769c6966db128,
     type: 3}
-  _finishPlatform: {fileID: 2788988411832622209, guid: 90fca3a186874f5419076fa906f921cd,
+  _finishPlatform: {fileID: 652976149883401491, guid: 90fca3a186874f5419076fa906f921cd,
     type: 3}
   _platform:
   - {fileID: 8332393184779501225, guid: 372e5b413252595439380f4d190d89df, type: 3}
+  - {fileID: 7542382754017833001, guid: 3cde48f8c3b84d6498de9d2b38dea7d8, type: 3}
+  - {fileID: 9155659141543692899, guid: c51993bf80e887547b98795c118829e2, type: 3}
 --- !u!4 &1494355225
 Transform:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class TowerBuilder : MonoBehaviour
     [SerializeField] private Platform[] _platform;
     private float _startAndFinishAdditionalScale = 0.5f;
     public float BeamScaleY => _levelCount / 2f + _startAndFinishAdditionalScale + _additionalScale/2f;
+    public float PlatformScaleY => 3f / BeamScaleY;
     private void Awake()
     {
         Build();
@@ -34,6 +35,7 @@ public class TowerBuilder : MonoBehaviour
 
     private void SpawnPlatform(Platform platform, ref Vector3 spawnPosition, Transform parent)
     {
+        platform.transform.localScale = new Vector3(1, PlatformScaleY, 1);
         Instantiate(platform, spawnPosition, Quaternion.Euler(0, Random.Range(0, 360), 0), parent);
         spawnPosition.y -= 1;
     }
